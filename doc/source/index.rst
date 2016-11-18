@@ -6,11 +6,21 @@
 magnum-specs Design Specifications
 ==================================================
 
+Ocata approved specs:
+
 .. toctree::
    :glob:
    :maxdepth: 2
 
-   specs/*
+   specs/ocata/*
+
+Pre-Ocata implemented specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/pre-ocata/implemented/*
 
 
 magnum-specs Repository Information
