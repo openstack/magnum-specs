@@ -6,6 +6,14 @@
 magnum-specs Design Specifications
 ==================================================
 
+Queens approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/queens/*
+
 Ocata approved specs:
 
 .. toctree::
