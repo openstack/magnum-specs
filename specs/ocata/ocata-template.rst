@@ -1,1 +1,0 @@
-../templates/ocata-template.rst

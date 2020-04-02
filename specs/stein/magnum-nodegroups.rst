@@ -110,8 +110,8 @@ to be dropped are the following:
     the existing CLIs. The only thing that will change is the way this
     information is stored and subsequently fetched from the database.
     e.g. The cluster show output will contain the node_count information but it
-         will be calculated at the API level by summing the node_count of all
-         the associated worker nodegroups.
+    will be calculated at the API level by summing the node_count of all the
+    associated worker nodegroups.
 
 REST API Impact
 ---------------

@@ -93,7 +93,7 @@ Volume plugin
   COE specific code that supports the functionality of a type of volume.
 
 Additional Magnum definitions can be found in the Magnum Developer
-documentation[7]_ .
+documentation [7]_ .
 
 Use Cases
 ----------
@@ -378,7 +378,7 @@ performance.
 An example of the second case is a docker swarm bay with
 "--volume-driver rexray" where the rexray driver's storage provider is
 OpenStack cinder. The resulting performance for container may vary depending
-on the storage backends. As listed in [8]_ , Cinder supports many storage
+on the storage backends. As listed in [8]_, [9]_, [10]_, Cinder supports many storage
 drivers. Besides this, different container volume driver can also cause
 performance variance.
 

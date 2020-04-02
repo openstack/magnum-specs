@@ -3,8 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-magnum-specs Design Specifications
+OpenStack Magnum Design Specifications
 ==================================================
+
+Stein approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/stein/*
 
 Queens approved specs:
 
@@ -13,6 +21,14 @@ Queens approved specs:
    :maxdepth: 2
 
    specs/queens/*
+
+Pike approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/pike/*
 
 Ocata approved specs:
 
@@ -30,21 +46,9 @@ Pre-Ocata implemented specs:
 
    specs/pre-ocata/implemented/*
 
-
-magnum-specs Repository Information
-===================================================
-
-.. toctree::
-   :maxdepth: 2
-
-   README <readme>
-   contributing
-
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 

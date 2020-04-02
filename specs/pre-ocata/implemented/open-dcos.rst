@@ -25,7 +25,7 @@ The mesos containerizer support both docker and AppC image spec, the mesos
 containerizer can manage docker containers well even if docker daemon is not
 running.
 
-End user can install Open DC/OS with different ways, such as vagrant, cloud,
+End user can install [2]_ Open DC/OS with different ways, such as vagrant, cloud,
 local etc. For cloud, the Open DC/OS only supports AWS now, end user can
 deploy a DC/OS cluster quickly with a template. For local install, there
 are many steps to install a Open DC/OS cluster.
