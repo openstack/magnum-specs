@@ -6,6 +6,14 @@
 OpenStack Magnum Design Specifications
 ==================================================
 
+Ussuri approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/ussuri/*
+
 Stein approved specs:
 
 .. toctree::
