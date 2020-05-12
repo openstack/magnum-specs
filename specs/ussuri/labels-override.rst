@@ -104,7 +104,7 @@ The label inheritance to be respected is::
     Cluster Template -> Cluster -> Nodegroup
 
 A new boolean flag will be added to the API. The flag's proposed name is
-``--override-labels``. The default value of this flag will be ``False`` meaning
+``--merge-labels``. The default value of this flag will be ``False`` meaning
 that we will maintain as default the current functionality::
 
     * If labels are provided then the parent labels will be ignored.
@@ -121,7 +121,7 @@ Consider a scenario where the following exists::
 A cluster is created using this cluster template with the following command::
 
     openstack coe cluster create --cluster-template .. --labels label1=value3 \
-    --labels label4=value4 --override-labels <cluster_name>
+    --labels label4=value4 --merge-labels <cluster_name>
 
 The resulting labels that will be stored in the cluster and the default nodegroups
 will be::
@@ -130,7 +130,7 @@ will be::
 
 Now consider adding a new nodegroup to that cluster::
 
-    openstack coe nodegroup create --labels label4=label5 --labels-override \
+    openstack coe nodegroup create --labels label4=label5 --merge-labels \
     <cluster_name> ng1
 
 The resulting labels that will be stored in the nodegroup will be::
@@ -151,9 +151,9 @@ This change leads to a minor version increase in the Magnum API.
 The post methods of Clusters and Nodegroups APIs will be adapted as shown
 below::
 
-    * Old APIs will not accept the --override-labels flag.
+    * Old APIs will not accept the --merge-labels flag.
 
-    * New APIs will allow clients to provide the --override-labels flag with
+    * New APIs will allow clients to provide the --merge-labels flag with
       a default value of `False``.
 
 The ``GET`` methods of Clusters and Nodegroups APIs will be adapted to show the
@@ -167,7 +167,7 @@ differences between the provided and parent labels. The proposed fields are::
 
     * labels_skipped: labels that exist in the parent dict but do not exist in
                       the object's labels. Specifically, this field will be
-                      used when the user did not provide the --override-labels
+                      used when the user did not provide the --merge-labels
                       (used the current functionality) and did not provide some
                       of the labels that exist in the parent.
 
@@ -178,11 +178,11 @@ The OpenStack client commands will be adapted:
 
 * create cluster: create cluster overriding a specific set of labels::
 
-    openstack coe cluster create --override-labels --labels label1=value1 ...
+    openstack coe cluster create --merge-labels --labels label1=value1 ...
 
 * create nodegroup: create a nodegroup overriding a specific set of labels::
 
-    openstack coe nodegroup create --override-labels --labels label1=value1 ...
+    openstack coe nodegroup create --merge-labels --labels label1=value1 ...
 
 
 Known Limitations
@@ -245,8 +245,8 @@ Documentation Impact
 Magnum documentation for labels will be adapted to describe the new way of
 overriding labels.
 
-The API reference guide should be updated accordingly to include the new labels
-override.
+The API reference guide should be updated accordingly to include the new
+--merge-labels flag..
 
 
 References
