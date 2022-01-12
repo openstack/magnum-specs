@@ -6,6 +6,14 @@
 OpenStack Magnum Design Specifications
 ==================================================
 
+Bobcat approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/bobcat/*
+
 Ussuri approved specs:
 
 .. toctree::
