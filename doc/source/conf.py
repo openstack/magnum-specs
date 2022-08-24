@@ -48,8 +48,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Magnum Specs'
-copyright = u'%s, OpenStack Containers Team' % datetime.date.today().year
+project = 'Magnum Specs'
+copyright = '%s, OpenStack Containers Team' % datetime.date.today().year
 
 # openstackdocstheme options
 openstackdocs_repo_name = 'openstack/magnum-specs'
@@ -171,8 +171,8 @@ htmlhelp_basename = '%sdoc' % project
 latex_documents = [
     ('index',
      '%s.tex' % project,
-     u'%s Documentation' % project,
-     u'OpenStack Foundation', 'manual'),
+     '%s Documentation' % project,
+     'OpenStack Foundation', 'manual'),
 ]
 
 # Example configuration for intersphinx: refer to the Python standard library.
