@@ -6,6 +6,14 @@
 OpenStack Magnum Design Specifications
 ==================================================
 
+Caracal approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/caracal/*
+
 Bobcat approved specs:
 
 .. toctree::
