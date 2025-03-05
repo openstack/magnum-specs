@@ -14,10 +14,10 @@ Problem description
 ===================
 
 The existing Magnum support for Kubernetes has proven hard to
-maintain, particularly around: upgrade, auto healing, auto scaling,
+maintain, particularly around: upgrade [#]_, auto healing, auto scaling,
 and keeping track of host operating system changes.
 
-At the same time, Kubernetes Cluster API has gained a lot of
+At the same time, Kubernetes Cluster API [#]_ has gained a lot of
 traction as a way to create, update and upgrade Kubernetes clusters.
 In particular, there is an active community keeping the OpenStack
 connector working:
@@ -260,4 +260,3 @@ References
 .. [#] https://docs.openstack.org/magnum/latest/user/#rolling-upgrade
 .. [#] https://cluster-api.sigs.k8s.io
 .. [#] https://github.com/kubernetes-sigs/image-builder/tree/master/images/capi/packer/qemu 
-.. [#] https://review.opendev.org/c/openstack/magnum/+/815521
