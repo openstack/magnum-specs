@@ -97,5 +97,5 @@ Dependencies
 Security Impact
 ===============
 
-- Include a description of how this change will affect the security posture of 
+- Include a description of how this change will affect the security posture of
   Magnum, or the configuration of the COE's it provides.
