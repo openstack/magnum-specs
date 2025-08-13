@@ -6,6 +6,14 @@
 OpenStack Magnum Design Specifications
 ==================================================
 
+Flamingo approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/flamingo/*
+
 Caracal approved specs:
 
 .. toctree::
