@@ -6,6 +6,14 @@
 OpenStack Magnum Design Specifications
 ==================================================
 
+Hibiscus approved specs:
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+
+   specs/hibiscus/*
+
 Flamingo approved specs:
 
 .. toctree::
